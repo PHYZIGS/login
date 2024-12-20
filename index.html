@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            background-image: url('bg.png'); /* Primary background image */
+            background-image: url('bg1.png'); /* Primary background image */
             background-size: cover;
             background-position: center;
             font-family: Arial, sans-serif;
@@ -19,35 +19,8 @@
         }
 
         /* Background animation for bg2 */
-        .bg2 {
-            position: absolute;
-            bottom: 100%; /* Initially position it below the screen */
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 150px; /* Adjust height as needed */
-            background-image: url('logo.png'); /* Second background image */
-            background-size: contain; /* Contain the image within the viewport */
-            background-position: center;
-            z-index: 1; /* Make sure it's behind the login container */
-            opacity: 0; /* Start with invisible */
-            animation: fadeInUp 2s ease-out forwards; /* Animation to appear */
-            box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.5); /* Shadow effect for bg2 */
-        }
-
-        /* Animation for fading in and moving up bg2 */
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0; /* Invisible at the start */
-                bottom: 40px; /* Below the screen */
-                left: 240px;
-            }
-            100% {
-                opacity: 1; /* Fully visible */
-                top: 50px;
-                left: 240px; /* Position just above the login container */
-            }
-        }
+      
+       
 
         /* 3D Login container with margin */
         .login-container {
@@ -162,8 +135,7 @@
     <!-- Second Background Image (bg2) -->
     <div class="bg2"></div>
 
-    <!-- Image above the login container -->
-    <img src="your-image.png" alt="Login Image" class="login-image">
+
 
     <div class="login-container">
         <h2>WELCOME</h2>
